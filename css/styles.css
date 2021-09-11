@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+input,
+textarea,
+button,
+select {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 html,body {
   font-family: sans-serif;
   line-height: 1.5;
@@ -13,6 +19,7 @@ html,body {
 a {
   text-decoration: none;
   color: #fff;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 a:hover {
   text-decoration: underline;
@@ -43,19 +50,23 @@ ul {
   border-radius: 50px;
   box-shadow: .1px .2px 100px hsl(208, 11%, 55%);
   cursor: pointer;
+  border: none;
 }
 .btn-try{
   color: hsl(192, 100%, 9%);
   background: #fff;
   width: 200px;
   height: 50px;
+  border: none;
 }
 .btn:hover {
   opacity: .7;
+  overflow: hidden;
 }
 .btn-try:hover {
   color: hsl(208, 11%, 55%);
   opacity: 1;
+  overflow: hidden;
 }
 
 .circle {
@@ -277,12 +288,14 @@ ul {
     border-radius: 50px;
     box-shadow: .1px .2px 100px hsl(208, 11%, 55%);
     cursor: pointer;
+    overflow: hidden;
   }
   .btn-try{
     color: hsl(192, 100%, 9%);
     background: #fff;
     width: 120px;
     height: 40px;
+    overflow: hidden;
   }
   .header {
     height: 100%;
